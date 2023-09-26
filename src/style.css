@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit; 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  visibility: hidden;
+}
+
+.sub-header {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+}
+
+.name {
+  display: flex;
+  justify-content: start;
+  font-size: x-large;
+  height: 4vh;
+}
+
+.img-logo {
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+}
+
+.logo > p {
+  margin-left: 2vw;
+}
+
+.burger {
+ text-align: center;
+ margin-right: 3vw;
+ margin-top: 1.5vh;
+}
+
+menu {
+  padding-top: 2vh;
+  display: none ;
+}
+
+.showMenu {
+  display: block;
+}
+
+menu > div {
+  height: 7vh;
+  text-align: center;
+  background-color: aqua;
+}
+
+.big-logo {
+  margin-top: 5vh;
+}
+
+.name-big-logo  {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  margin-bottom: 3vh;
+}
+
+
+
+.big-logo > p {
+  display: flex;
+  justify-content: center;
+  margin-top: -2vh;
+}
+
+.img-big-logo {
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.xIcon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+
+
