@@ -3,3 +3,6 @@ layout: layout.njk
 ---
 {% include "sub-header.njk" %}
 
+{%- for category in collections.category  -%}
+  <h3>{{ category.data.category }}</h3>
+{% endfor %}
