@@ -5,4 +5,5 @@ layout: layout.njk
 
 {%- for category in collections.category  -%}
   <h3>{{ category.data.category }}</h3>
+  <img src="{{category.data.image}}" alt="">
 {% endfor %}
