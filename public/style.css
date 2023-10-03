@@ -112,5 +112,8 @@ menu > div {
   transform: translate(0, -11px) rotate(45deg);
 }
 
+.category {
+  display: inline-block;
+}
 
 
