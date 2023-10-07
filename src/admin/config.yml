@@ -9,6 +9,7 @@ collections:
     folder: "src/gallery"
     create: true
     slug: "{{slug}}"
+    preview_path: "gallery/{{slug}}" 
     fields: 
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
