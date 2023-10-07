@@ -8,11 +8,11 @@ collections:
     label: "Gallery"
     folder: "src/gallery"
     create: true
-    slug: "{{title}}"
+    slug: "{{category}}"
     fields: 
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
-      - {label: "Title", name: "title", widget: "string"}
+      
 
 
 
