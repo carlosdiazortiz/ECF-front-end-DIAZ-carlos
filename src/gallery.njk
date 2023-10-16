@@ -2,11 +2,15 @@
 layout: layout.njk
 ---
 {% include "sub-header.njk" %}
-
+<div class="category">
 {%- for category in collections.category  -%}
-  <div class="category">
-    <a href="{{category.url}}"><h3>{{ category.data.category }}</h3></a>
-    <img src="{{category.data.image}}" width="200vw" alt="">
-  </div>
+  
+    <div>
+      <a href="{{category.url}}"><p>{{ category.data.category }}</p></a>
+      <div class="image">
+        <img src="{{category.data.image}}" width="200vw" alt="">
+      </div>
+    </div>
   
 {% endfor %}
+</div>

@@ -5,7 +5,7 @@
   text-decoration: none;
 }
 
-a:visited {
+a:visited, a:link {
   color: inherit; 
 }
 
@@ -56,13 +56,17 @@ menu {
 }
 
 menu > div {
-  height: 7vh;
+  height: 5vh;
   text-align: center;
-  background-color: aqua;
 }
 
 .big-logo {
-  margin-top: 5vh;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .name-big-logo  {
@@ -72,8 +76,6 @@ menu > div {
   font-size: xx-large;
   margin-bottom: 3vh;
 }
-
-
 
 .big-logo > p {
   display: flex;
@@ -100,6 +102,7 @@ menu > div {
 }
 
 /* Rotate first bar */
+
 .change .bar1 {
   transform: translate(0, 11px) rotate(-45deg);
 }
@@ -113,7 +116,25 @@ menu > div {
 }
 
 .category {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 7vh;
+  
 }
+
+.category > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5vw;
+}
+
+.category p {
+  height: 7vh;
+  
+}  
+
+
 
 
