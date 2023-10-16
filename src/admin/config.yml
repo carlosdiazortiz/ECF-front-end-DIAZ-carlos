@@ -13,10 +13,10 @@ collections:
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
       - label: "Images"
-      name: "images"
-      widget: "object"
-      fields:
-        - {label: "Image", name: "image", widget: "image"} 
+        name: "images"
+        widget: "object"
+        fields:
+          - {label: "Image", name: "image", widget: "image"} 
       
 
 
