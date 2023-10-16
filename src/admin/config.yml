@@ -14,8 +14,8 @@ collections:
       - {label: "Image", name: "image", widget: "image"}
       - label: "Images"
         name: "images"
-        widget: "object"
-        fields:
+        widget: "modular"
+        types:
           - {label: "Image", name: "image", widget: "image"} 
       
 
