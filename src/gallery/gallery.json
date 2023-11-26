@@ -1,3 +1,6 @@
 {
-  "tags": "category"
+  "tags": "gallery",
+  "layout": "gallery-layout.njk"
 }
+
+
