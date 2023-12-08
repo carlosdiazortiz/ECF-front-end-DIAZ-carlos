@@ -1,7 +1,22 @@
 ---
 layout: layout.njk  
+
 ---
 {% include "header-logo.njk" %}
+
+<div class="title">
+  <h1>{{category}}</h1>
+</div>
+
+{% for i in images %}
+<img src="{{i.image}}" width="200vw" alt="">
+{% endfor%}
+
+
+
+
+
+
 
 {{ content | safe }}
 

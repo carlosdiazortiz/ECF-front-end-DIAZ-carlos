@@ -17,6 +17,7 @@ collections:
         widget: "list"
         fields:
           - {label: "Image", name: "image", widget: "image"} 
+      - {label: "Test", name: "test", widget: "markdown"}
       
 
 
