@@ -1,11 +1,25 @@
+---
+layout: layout.njk
+---
+{% include "header-logo.njk" %}
+
+<div class="contact-wrapper">
 <form name="contact" netlify>
-  <p>
-    <label>Name <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Email <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
+  <h1>Contactez Charles Cantin</h1>  
+      <label for="name">Nom et prénom</label>
+      <input type="text" id="name">
+
+      <label for="email">Adresse e-mail</label>
+      <input type="email" id="email">
+    
+      <label for="message">Message</label>
+      <textarea name="" id="message" cols="30" rows="10"></textarea>
+      <div class="form-button">
+        <button type="submit">Envoyer</button>
+      </div>
+      
+      
 </form>
+</div>
+
+

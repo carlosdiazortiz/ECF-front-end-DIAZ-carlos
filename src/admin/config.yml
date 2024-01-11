@@ -18,7 +18,14 @@ collections:
         fields:
           - {label: "Image", name: "image", widget: "image"} 
       - {label: "Test", name: "test", widget: "markdown"}
-      
+  - name: "services"
+    label: "Services"
+    folder: "src/services"
+    create:  true
+    fields:
+      - {label: "Services", name: "services", widget: "string"}
+      - {label: "Price", name: "price", widget: "number"}
+      - {label: "Description", name: "description", widget: "text"}    
 
 
 
