@@ -22,7 +22,7 @@ collections:
     folder: "src/services"
     create:  true
     fields:
-      - {label: "Services", name: "services", widget: "string"}
+      - {label: "Service", name: "service", widget: "string"}
       - {label: "Price", name: "price", widget: "number"}
       - {label: "Description", name: "description", widget: "text"}    
 
