@@ -16,8 +16,7 @@ collections:
         name: "images"
         widget: "list"
         fields:
-          - {label: "Image", name: "image", widget: "image"} 
-      - {label: "Test", name: "test", widget: "markdown"}
+          - {label: "Image", name: "image", widget: "image"}     
   - name: "services"
     label: "Services"
     folder: "src/services"
