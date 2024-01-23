@@ -3,14 +3,16 @@ layout: layout.njk
 ---
 {% include "header-logo.njk" %}
 
-<h2>Servicesdfdfs</h2>
+<h2>Services
+</h2>
 <div class="category">
 {% for service in collections.services %}
   
     <div>
       <p>{{ service.data.service }}</p>
-      <p>{{ service.data.price }}</p>
       <p>{{ service.data.description }}</p>
+      <p>Prix: {{ service.data.price }} euros </p>
+      
      
     </div>
   

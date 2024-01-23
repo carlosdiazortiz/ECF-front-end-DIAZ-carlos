@@ -24,7 +24,8 @@ collections:
     fields:
       - {label: "Service", name: "service", widget: "string"}
       - {label: "Price", name: "price", widget: "number"}
-      - {label: "Description", name: "description", widget: "text"}    
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image"}    
 
 
 
