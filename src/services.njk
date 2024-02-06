@@ -3,20 +3,20 @@ layout: layout.njk
 ---
 {% include "header-logo.njk" %}
 
-<h2>Services
-</h2>
+<div class="title">
+  <h1>Tarifs et prestations</h1>
+</div>
+
 <div class="category">
 {% for service in collections.services %}
   
     <div>
-      <p>{{ service.data.service }}</p>
+      <h2>{{ service.data.service }}</h2>
       <div>
-        <img src="{{service.data.image}}" width="200vw" alt="">
+        <img class="service-picture" src="{{service.data.image}}" width="200vw" alt="">
       </div>
-      <p>{{ service.data.description }}</p>
-      <p>Prix: {{ service.data.price }} euros </p>
-      
-     
+      <div class="description">{{ service.data.description }}</div>
+      <div>Prix: {{ service.data.price }} euros </div>
     </div>
   
 {% endfor %}

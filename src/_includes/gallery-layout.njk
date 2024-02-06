@@ -5,18 +5,19 @@ layout: layout.njk
 {% include "header-logo.njk" %}
 
 <div class="title">
-  <h2>{{category}}</h2>
+  <h1>Galerie - {{category}}</h1>
 </div>
 
-{% for i in images %}
-<img src="{{i.image}}" width="200vw" alt="">
-{% endfor%}
-
-
-
-
-
-
+<div class="category">
+  {% for i in images %}
+  <div>
+    <div class="gallery-picture">
+      <img src="{{i.image}}" width="200vw" alt="">
+    </div>
+  </div>
+    
+  {% endfor%}
+</div>
 
 {{ content | safe }}
 

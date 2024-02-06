@@ -49,8 +49,8 @@ header {
 menu {
   padding-top: 2vh;
   display: none ;
-  border: solid 2px;
-  width: 70%;
+  box-shadow: 0px 0px 36px -7px;
+  width: 80vw;
   margin: auto;
   margin-top: 5vh;
   
@@ -121,8 +121,7 @@ menu > div {
 }
 
 .title {
-  padding-bottom: 5vh;
-  
+  padding: 2vh;
 }
 
 .category {
@@ -130,31 +129,48 @@ menu > div {
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 3vh;
-  
 }
 
 .category > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4vw;
+  margin: 2vw;
+  margin-bottom: 6vh;
+  box-shadow: 0px 0px 36px -7px;
+  padding-top: 5vh;
 }
 
 .category p {
   height: 7vh;
-  
 }  
 
+.gallery-picture {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+.description {
+  width: 70vw;
+  margin: 2vh;
+}
+
+.service-picture {
+  margin-top: 2vh;
+}
+
 .contact-wrapper {
-  width: 80%;
+  width: 80vw;
   margin: auto;
   margin-top: 5vh;
+  padding-top: 3vh ;
   box-shadow: 0px 0px 36px -7px;
-  border-radius: 20px;
 }
 
 form {
-  width: 75%;
+  width: 80%;
   margin: auto;
 }
 
@@ -169,14 +185,14 @@ textarea {
   border: solid 2px;
 }
 
-h1 {
-  font-size: 1.3rem;
+h2 {
+  font-size: calc(15px + 1vw);
   text-align: center;
+  margin-bottom: 3vh;
 }
 
-h2 {
-  font-size: 1rem;
-  font-family: cursive;
+h1 {
+  font-size: calc(20px + 1vw);
   margin-top: 5vh;
   margin-left: 1vw;
 }
@@ -191,6 +207,35 @@ button {
   margin-bottom: 1rem;
   border-radius: 7px;
 }
+
+@media screen and (min-width: 500px) {
+  .description {
+    width: 30vw;
+    margin: 6vh;
+  }
+
+  .gallery-picture {
+    width: 45vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .description {
+    width: 20vw;
+    margin: 10vh;
+  }
+
+  .gallery-picture {
+    width: 25vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-picture {
+    width: 20vw;
+  }
+}
+
 
 
 

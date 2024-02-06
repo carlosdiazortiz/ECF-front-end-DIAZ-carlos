@@ -3,13 +3,16 @@ layout: layout.njk
 ---
 {% include "header-logo.njk" %}
 
-<h2>Galerie</h2>
+<div class="title">
+  <h1>Galerie</h1>
+</div>
+
 <div class="category">
 {% for category in collections.gallery %}
   
     <div>
-      <a href="{{category.url}}"><p>{{ category.data.category }}</p></a>
-      <div>
+      <a href="{{category.url}}"><h2>{{ category.data.category }}</h2></a>
+      <div class="gallery-picture">
         <img src="{{category.data.image}}" width="200vw" alt="">
       </div>
     </div>
