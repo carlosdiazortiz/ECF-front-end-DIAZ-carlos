@@ -9,13 +9,12 @@ layout: layout.njk
 
 <div class="category">
 {% for category in collections.gallery %}
-  
-    <div>
-      <a href="{{category.url}}"><h2>{{ category.data.category }}</h2></a>
-      <div class="gallery-picture">
-        <img src="{{category.data.image}}" width="200vw" alt="">
-      </div>
-    </div>
+  <div>
+    <a href="{{category.url}}"><h2>{{ category.data.category }}</h2>
+    <div class="gallery-picture">
+      <img src="{{category.data.image}}" width="200vw" alt="">
+    </div></a>
+  </div>
   
 {% endfor %}
 </div>

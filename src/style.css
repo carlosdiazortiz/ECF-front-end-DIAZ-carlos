@@ -24,6 +24,10 @@ header {
   left: 1vw;
 }
 
+.header-logo > div {
+  margin-bottom: 1.5vh;
+}
+
 .name {
   display: flex;
   justify-content: start;
@@ -71,6 +75,10 @@ menu > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.big-logo-change {
+  position: relative;
 }
 
 .name-big-logo  {
@@ -188,12 +196,14 @@ h2 {
   font-size: calc(15px + 1vw);
   text-align: center;
   margin-bottom: 3vh;
+  font-weight: normal;
 }
 
 h1 {
   font-size: calc(20px + 1vw);
   margin-top: 5vh;
   margin-left: 1vw;
+  font-weight: normal;
 }
 
 .form-button {
@@ -223,6 +233,10 @@ button {
     width: 20vw;
     margin: 10vh;
   }
+
+  .contact-wrapper {
+    width: 50vw;
+  }
  
   menu {
     display: flex;
@@ -239,7 +253,6 @@ button {
     display: inline-block;
   }
   
-
   .burger {
     display: none;
   }
@@ -253,7 +266,13 @@ button {
   .gallery-picture {
     width: 20vw;
   }
+
+  .contact-wrapper {
+    width: 40vw;
+  }
 }
+
+
 
 
 
