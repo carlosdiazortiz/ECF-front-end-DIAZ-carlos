@@ -50,10 +50,9 @@ menu {
   padding-top: 2vh;
   display: none ;
   box-shadow: 0px 0px 36px -7px;
-  width: 80vw;
   margin: auto;
   margin-top: 5vh;
-  
+  padding-bottom: 5vh;
 }
 
 .showMenu {
@@ -61,7 +60,7 @@ menu {
 }
 
 menu > div {
-  height: 5vh;
+  height: 7vh;
   text-align: center;
 }
 
@@ -223,6 +222,26 @@ button {
   .description {
     width: 20vw;
     margin: 10vh;
+  }
+ 
+  menu {
+    display: flex;
+    justify-content: flex-end;
+    top: 1vh;
+    right: 1vw;
+    box-shadow: none;
+    position: absolute; 
+  }
+
+  menu > div {
+    margin-right: 3vw;
+    margin-left: 2vw;
+    display: inline-block;
+  }
+  
+
+  .burger {
+    display: none;
   }
 
   .gallery-picture {

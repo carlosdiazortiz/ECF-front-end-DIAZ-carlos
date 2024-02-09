@@ -5,7 +5,7 @@ media_folder: "src/img/uploads"
 public_folder: "/img/uploads"
 collections:
   - name: "gallery"
-    label: "Gallery"
+    label: "Galerie"
     folder: "src/gallery"
     create: true
     slug: "{{category}}"
@@ -18,7 +18,7 @@ collections:
         fields:
           - {label: "Image", name: "image", widget: "image"}     
   - name: "services"
-    label: "Services"
+    label: "Tarifs et prestations"
     folder: "src/services"
     create:  true
     fields:

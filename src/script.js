@@ -3,4 +3,7 @@ document.querySelector(".xIcon").addEventListener("click", function() {
   this.classList.toggle("change");
 });
 
- 
+if (window.matchMedia("(max-width: 500px)")){
+  
+  
+}
