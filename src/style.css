@@ -18,6 +18,7 @@ header {
   visibility: hidden;
 }
 
+
 .header-logo {
   position: absolute;
   top: 1vh;
@@ -61,6 +62,8 @@ menu {
 
 .showMenu {
   display: block;
+  -webkit-animation-name: slide;
+  -webkit-animation-duration: 0.6s;
 }
 
 menu > div {
@@ -245,7 +248,7 @@ button {
 
   .description {
     width: 20vw;
-    margin: 10vh;
+    margin: 5vh;
   }
 
   .contact-wrapper {
@@ -287,7 +290,6 @@ button {
 }
 
 #myImg {
-  /*border-radius: 5px;*/
   cursor: pointer;
   transition: 0.3s;
 }
@@ -307,7 +309,6 @@ button {
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.9); 
 }
-
 
 .modal-content {
   margin: auto;
@@ -365,6 +366,14 @@ button {
   .modal-content {
     width: 100%;
   }
+}
+
+.price {
+  margin-bottom: 3vh;
+}
+
+.image {
+  box-shadow: 0px 0px 36px -7px;
 }
 
 
