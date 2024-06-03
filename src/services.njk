@@ -10,10 +10,10 @@ layout: layout.njk
 <div class="category">
 {% for service in collections.services %}
   
-    <div>
+    <div class="services-layout">
       <h2>{{ service.data.service }}</h2>
       <div>
-        <img class="service-picture" src="{{service.data.image}}" width="200vw" alt="">
+        <img class="service-picture" src="{{service.data.image}}" width="200" alt="">
       </div>
       <div class="description">{{ service.data.description }}</div>
       <div class="price">Prix: {{ service.data.price }} euros </div>

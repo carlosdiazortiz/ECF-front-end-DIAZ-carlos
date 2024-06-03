@@ -22,7 +22,7 @@ span.addEventListener("click", function() {
   modal.style.display ="none";
 })
 
-  
+
 
 
 

@@ -1,9 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Verdana;
   text-decoration: none;
 }
+
+body {
+  background-color: #FACC70;
+} 
 
 a:visited, a:link {
   color: inherit; 
@@ -17,7 +21,6 @@ header {
 .logo {
   visibility: hidden;
 }
-
 
 .header-logo {
   position: absolute;
@@ -36,6 +39,10 @@ header {
   height: 4vh;
 }
 
+.name >p {
+  margin-left: -0.3vw;
+}
+
 .img-logo {
   padding-left: 0.5vw;
   padding-right: 0.5vw;
@@ -43,6 +50,10 @@ header {
 
 .logo > p {
   margin-left: 2vw;
+}
+
+.name-big-logo > p {
+  margin-left: -0.3vw;
 }
 
 .burger {
@@ -58,12 +69,13 @@ menu {
   margin: auto;
   margin-top: 5vh;
   padding-bottom: 5vh;
+  background-color: #DE7A22;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 
 .showMenu {
   display: block;
-  -webkit-animation-name: slide;
-  -webkit-animation-duration: 0.6s;
 }
 
 menu > div {
@@ -111,21 +123,17 @@ menu > div {
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #333;
+  background-color: #DE7A22;
   margin: 6px 0;
   transition: 0.4s;
 }
-
-/* Rotate first bar */
 
 .change .bar1 {
   transform: translate(0, 11px) rotate(-45deg);
 }
 
-/* Fade out the second bar */
 .change .bar2 {opacity: 0;}
 
-/* Rotate last bar */
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
@@ -149,17 +157,20 @@ menu > div {
   margin-bottom: 6vh;
   box-shadow: 0px 0px 36px -7px;
   padding-top: 5vh;
+  background-color: #6AB187;
 }
 
 .category p {
   height: 7vh;
-}  
+}
 
 .gallery-picture {
   width: 80vw;
   display: flex;
   justify-content: center;
   margin-bottom: 5vh;
+  margin: auto;
+  padding-bottom: 7vh;
 }
 
 .category-pictures {
@@ -171,6 +182,7 @@ menu > div {
 .description {
   width: 70vw;
   margin: 2vh;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .service-picture {
@@ -181,28 +193,53 @@ menu > div {
   width: 80vw;
   margin: auto;
   margin-top: 5vh;
+  margin-bottom: 5vh;
   padding-top: 3vh ;
   box-shadow: 0px 0px 36px -7px;
+  background-color: #6AB187;
 }
 
 form {
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
   margin: auto;
 }
 
 form > h1, input, label, textarea {
-  margin-top: 0.3rem;
-  margin-bottom: 1rem;
-  width: 100%;
+  margin: auto;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  width: 60vw;
   border-radius: 7px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-textarea {
-  border: solid 2px;
+.form-button {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 30vw;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  border-radius: 7px;
+  background-color: #0000FF;
+  color: white;
+  padding-bottom: 1vh;
+  padding-top: 0.5vh;
+  box-shadow: 0px 0px 36px -7px black;
+  border: none ;
+}
+
+textarea, input {
+  border: solid 1px black;
 }
 
 h2 {
-  font-size: calc(15px + 1vw);
+  font-size: calc(20px + 1vw);
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
   margin-bottom: 3vh;
   font-weight: normal;
@@ -212,81 +249,7 @@ h1 {
   font-size: calc(20px + 1vw);
   margin-top: 5vh;
   margin-left: 1vw;
-  font-weight: normal;
-}
-
-.form-button {
-  display: flex;
-  justify-content: center;
-}
-
-button {
-  width: 70%;
-  margin-bottom: 1rem;
-  border-radius: 7px;
-}
-
-@media screen and (min-width: 500px) {
-  .description {
-    width: 30vw;
-    margin: 6vh;
-  }
-
-  .gallery-picture {
-    width: 45vw;
-  }
-  .category > div > div {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .big-logo{
-    position: absolute;
-  }
-
-  .description {
-    width: 20vw;
-    margin: 5vh;
-  }
-
-  .contact-wrapper {
-    width: 50vw;
-  }
- 
-  menu {
-    display: flex;
-    justify-content: flex-end;
-    top: 1vh;
-    right: 1vw;
-    box-shadow: none;
-    position: absolute; 
-  }
-
-  menu > div {
-    margin-right: 3vw;
-    margin-left: 2vw;
-    display: inline-block;
-  }
-  
-  .burger {
-    display: none;
-  }
-
-  .gallery-picture {
-    width: 25vw;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .gallery-picture {
-    width: 20vw;
-  }
-
-  .contact-wrapper {
-    width: 40vw;
-  }
+  font-weight: lighter;
 }
 
 #myImg {
@@ -294,7 +257,9 @@ button {
   transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+#myImg:hover {
+  opacity: 0.7;
+}
 
 .modal {
   display: none; 
@@ -314,7 +279,7 @@ button {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  width: 100%;
 }
 
 #caption {
@@ -362,19 +327,231 @@ button {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-
 .price {
   margin-bottom: 3vh;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .image {
   box-shadow: 0px 0px 36px -7px;
 }
+
+.confirmation-message {
+  display: flex;
+  width: 80vw;
+  margin: auto;
+  text-align: center;
+  background-color: #b8f1c0;
+  position: relative;
+  margin-top: 7vh;
+  background-color: #6AB187;
+  box-shadow: 0px 0px 36px -7px;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.backHome {
+  width: 60vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  background-color: #0000FF;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 36px -7px black;
+}
+
+@media screen and (min-width: 500px) {
+  .description {
+    width: 30vw;
+    margin: 6vh;
+  }
+
+  .gallery-picture {
+    width: 45vw;
+  }
+  .category > div > div {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  .contact-wrapper {
+    width: 65vw;
+    display: flex;
+    margin: auto;
+    margin-bottom: 5vh;
+  }
+
+  form > h1, input, label, textarea, button {
+    width: 50vw;
+  }
+
+  button {
+    width: 20vw;
+  }
+
+  .confirmation-message {
+    width: 50vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .backHome {
+    width: 40vw;
+  }
+
+  .name-big-logo > p {
+    margin-left: -1vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+
+  menu {
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+  }
+
+  h2 {
+    font-size: calc(15px + 1vw);
+    margin-right: 6vw;
+    margin-left: 6vw;
+  }
+
+  h1 {
+    font-size: calc(15px + 1vw);
+  }
+
+  .big-logo{
+    position: absolute;
+  }
+
+  .description {
+    width: 20vw;
+    margin: 5vh;
+  }
+
+  .contact-wrapper {
+    width: 40vw;
+    display: flex;
+    margin: auto;
+    margin-bottom: 5vh;
+  }
+
+  form > h1, input, label, textarea, button {
+    width: 30vw;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+  }
+
+  button {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 15vw;
+  }
+ 
+  menu {
+    display: flex;
+    justify-content: flex-end;
+    top: 1vh;
+    right: 1vw;
+    box-shadow: none;
+    position: absolute; 
+  }
+
+  menu > div {
+    margin-right: 2vw;
+    margin-left: 1vw;
+    display: inline-block;
+  }
+  
+  .burger {
+    display: none;
+  }
+
+  .gallery-picture {
+    width: 25vw;
+  }
+
+  .modal-content {
+    width: 350px;
+  }
+
+  .image {
+    width: 60%;
+  }
+
+  .service-picture {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+
+  .category-pictures {
+    width: 100vw;
+  }
+
+  .category > .services-layout {
+    width: 25%;
+  }
+
+  .galleryMainImage {
+    width: 50%;
+  }
+
+  .category > div {
+    width: 20%;
+  }
+
+  .confirmation-message {
+    width: 30vw;
+  }
+
+  .backHome {
+    width: 25vw;
+  }
+
+  .name-big-logo > p {
+    margin-left: -1.5vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-picture {
+    width: 20vw;
+  }
+
+  .contact-wrapper {
+    width: 35vw;
+  }
+
+  button {
+    width: 10vw;
+  }
+
+  .backHome {
+    width: 17vw;
+  }
+
+  .confirmation-message {
+    width: 20vw;
+    
+  }
+}
+
+@media only screen and (min-width: 550px){
+  .modal-content {
+    width: 400px;
+  }
+}
+
+
+
+
+
 
 
 
