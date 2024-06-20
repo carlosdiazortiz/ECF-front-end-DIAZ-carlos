@@ -1,4 +1,4 @@
-Projet réalisé par Carlos DIAZ dans le cadre de l'évaluation d'entraînement en cours de formation chez STUDI: Développer la partie front-end d'une application web.
+Projet réalisé par Carlos DIAZ dans le cadre de l'évaluation d'entraînement en cours de formation Développeur Web PHP/Symfony chez STUDI: Développer la partie front-end d'une application web.
 
 Description du projet : Mise en place d'un système de gestion de contenu pour le site web du photographe Charles Cantin.
 Outils utilisés : Eleventy, Netlify, Decap CMS.
