@@ -3,10 +3,12 @@
   padding: 0;
   font-family: Verdana;
   text-decoration: none;
+  color: #FACC70;
 }
 
 body {
-  background-color: #FACC70;
+  background-image: url(img/photo2.jpg);
+  background-size: auto;
 } 
 
 a:visited, a:link {
@@ -32,6 +34,10 @@ header {
   margin-bottom: 1.5vh;
 }
 
+.photographer {
+  font-size: 20px;
+}
+
 .name {
   display: flex;
   justify-content: start;
@@ -39,7 +45,7 @@ header {
   height: 4vh;
 }
 
-.name >p {
+.name > p {
   margin-left: -0.3vw;
 }
 
@@ -56,6 +62,10 @@ header {
   margin-left: -0.3vw;
 }
 
+i {
+  font-size: 25px;
+}
+
 .burger {
  text-align: center;
  margin-right: 3vw;
@@ -65,7 +75,7 @@ header {
 menu {
   padding-top: 2vh;
   display: none ;
-  box-shadow: 0px 0px 36px -7px;
+  box-shadow: 0px 0px 36px -7px black;
   margin: auto;
   margin-top: 5vh;
   padding-bottom: 5vh;
@@ -100,7 +110,7 @@ menu > div {
   text-align: center;
   display: flex;
   justify-content: center;
-  font-size: xx-large;
+  font-size: 10vw;
   margin-bottom: 3vh;
 }
 
@@ -155,7 +165,7 @@ menu > div {
   align-items: center;
   margin: 2vw;
   margin-bottom: 6vh;
-  box-shadow: 0px 0px 36px -7px;
+  box-shadow: 0px 0px 36px -7px black;
   padding-top: 5vh;
   background-color: #6AB187;
 }
@@ -183,6 +193,7 @@ menu > div {
   width: 70vw;
   margin: 2vh;
   font-family: 'Courier New', Courier, monospace;
+  color: black;
 }
 
 .service-picture {
@@ -195,7 +206,7 @@ menu > div {
   margin-top: 5vh;
   margin-bottom: 5vh;
   padding-top: 3vh ;
-  box-shadow: 0px 0px 36px -7px;
+  box-shadow: 0px 0px 36px -7px black;
   background-color: #6AB187;
 }
 
@@ -213,6 +224,7 @@ form > h1, input, label, textarea {
   width: 60vw;
   border-radius: 7px;
   font-family: 'Courier New', Courier, monospace;
+  color: black;
 }
 
 .form-button {
@@ -247,7 +259,7 @@ h2 {
   text-align: center;
   margin-bottom: 3vh;
   font-weight: normal;
- 
+  color: black;
   
 }
 
@@ -256,6 +268,7 @@ h1 {
   margin-top: 5vh;
   margin-left: 1vw;
   font-weight: lighter;
+  font-style: italic;
 }
 
 #myImg {
@@ -336,10 +349,11 @@ h1 {
 .price {
   margin-bottom: 3vh;
   font-family: 'Courier New', Courier, monospace;
+  color: black;
 }
 
 .image {
-  box-shadow: 0px 0px 36px -7px;
+  box-shadow: 0px 0px 36px -7px black;
 }
 
 .confirmation-message {
@@ -351,7 +365,7 @@ h1 {
   position: relative;
   margin-top: 7vh;
   background-color: #6AB187;
-  box-shadow: 0px 0px 36px -7px;
+  box-shadow: 0px 0px 36px -7px black;
   padding-top: 2vh;
   padding-bottom: 2vh;
 }
@@ -368,7 +382,17 @@ h1 {
   box-shadow: 0px 0px 36px -7px black;
 }
 
+form > p {
+  color: black;
+}
+
 @media screen and (min-width: 500px) {
+
+  body {
+    background-image: url(img/photo4.jpg);
+    background-size: auto;
+  }
+
   .description {
     width: 30vw;
     margin: 6vh;
@@ -409,10 +433,20 @@ h1 {
 
   .name-big-logo > p {
     margin-left: -1vw;
+    font-size: 8vw;
+  }
+
+  i {
+    font-size: 30px;
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 850px) {
+
+  body {
+    background-image: url(img/photo7.jpg);
+    background-size: cover;
+  }
 
   menu {
     background-color: transparent;
@@ -522,10 +556,16 @@ h1 {
 
   .name-big-logo > p {
     margin-left: -1.5vw;
+    font-size: 7vw;
+  }
+
+  i {
+    font-size: 40px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+
   .gallery-picture {
     width: 20vw;
   }
@@ -544,7 +584,14 @@ h1 {
 
   .confirmation-message {
     width: 20vw;
-    
+  }
+
+  .name-big-logo > p {
+    font-size: 6vw;
+  }
+
+  i {
+    font-size: 60px;
   }
 }
 
