@@ -5,11 +5,11 @@ Outils utilisés : Eleventy, Netlify, Decap CMS.
 Langages: HTML5, CSS, Javascript.
 
 Démarches à suivre pour le déploiement du site:
-- Pour visiter le site web de Charles Cantin voici le lien: charles-cantin-photographe-projet.netlify.app
+- Pour visiter le site web de Charles Cantin voici le lien: charles-cantin-projet-diaz-carlos.netlify.app
 
 - Pour que Charles Cantin puisse gérer le contenu de son site et faire des modifications (ex: ajouter ou effacer des photos, ajouter ou effacer des catégories, etc) il doit, d'abord, écrire l'adresse suivante :
 
-  charles-cantin-photographe-projet.netlify.app/admin
+  charles-cantin-projet-diaz-carlos.netlify.app/admin
   
   Ensuite il faut cliquer sur le bouton "Login with Netlify Identity".
 
